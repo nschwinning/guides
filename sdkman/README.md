@@ -20,10 +20,25 @@ List candidates:
 sdk list java
 ```
 
+Install latest version:
+
+```sh
+sdk install java
+sdk install maven
+```
+
 Install specific version:
 
 ```sh
 sdk install java 17.0.6-tem
+sdk install java 8.0.362-zulu
+```
+
+Use specific version:
+
+```sh
+sdk use java 17.0.6-tem
+sdk install java 8.0.362-zulu
 ```
 
 ## Env Command

@@ -63,6 +63,60 @@ Update outdated packages:
 poetry update
 ```
 
+## Conda
+
+### Installation
+
+```sh
+brew install --cask anaconda
+```
+
+Add the following snippet to .zshrc:
+
+```
+export PATH=$PATH:/opt/homebrew/anaconda3/bin
+```
+
+Test if it works:
+
+```sh
+conda --version
+```
+
+### Update
+
+```sh
+conda update -n base -c defaults conda
+```
+
+### Usage
+
+Init:
+
+```sh
+conda init
+```
+
+This will initialize a base enviroment. You have to source your .zshrc file so that changes will take effect.
+
+Create env:
+
+```sh
+conda create -n testenv python=3.11 anaconda
+
+conda activate testenv
+```
+
+Deactivate:
+
+```sh
+conda deactivate
+```
+
+Install scipoptsuite:
+
+- https://github.com/conda-forge/scipoptsuite-feedstock
+
 ## pip-audit
 
 ### Installation
